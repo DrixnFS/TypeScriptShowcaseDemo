@@ -1,0 +1,13 @@
+{
+  "name": "typescriptdemo",
+  "version": "1.0.0",
+  "description": "Testing demo and showcase of typescript",
+  "main": "_init.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Martin \"DrixnFS\" Krzyzanek",
+  "license": "ISC",
+  "devDependencies": {
+  }
+}
