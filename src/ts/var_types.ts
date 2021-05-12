@@ -6,6 +6,17 @@ class Pupek {
 	readonly d: unknown;
 }
 
+//NOTE! When working with elements or arrays of elements sometimes the TS would pop up the object might be undefined, if you are sure there is no way of it being empty you can add !
+var button = document.querySelector('button')!;
+
+//When working with elements you might also need to define what kind of element you are loading so the code knows it will have value and it actually expands posibilities what can be done with it.
+// better to specify the type instead of using !
+var div = < HTMLDivElement > document.getElementById("poster-content");
+//You can also specify type of element with addition of "as ...". I like to use as when loading element and not doing actions and the prefix when doing action
+var svg = document.querySelector('.render-text-svg') as SVGAElement
+//Using type prefix when doing something or getting something from the element;
+var value = (<HTMLInputElement> event.target).value;
+
 //Typescript automatically takes the type from the value used at inicialization of variable
 const num = 5;
 //This manual type can be used but is taken as wrong syntax as there is no reason
