@@ -1,3 +1,10 @@
+//BIG THING!!! You can actually set variables to be private, protected or public
+class Pupek {
+	private a: number;
+	public b: boolean;
+	protected c: string;
+}
+
 //Typescript automatically takes the type from the value used at inicialization of variable
 const num = 5;
 //This manual type can be used but is taken as wrong syntax as there is no reason

@@ -6,6 +6,13 @@ function voidFunction2(num: number): undefined {
 	return;
 }
 
+//BIG THING!!! You can actually set variables to be private, protected or public. Only works in class tho
+class Pupe {
+	public myPublicFce(): void {};
+	private notGonnaSeeThisFce(): any {};
+	protected immaProtectedBoi(): void{};
+}
+
 //You can set variable as function type for future function holding
 let futureFceVar: Function;
 futureFceVar = function () {};
