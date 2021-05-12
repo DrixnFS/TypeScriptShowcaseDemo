@@ -3,6 +3,7 @@ class Pupek {
 	private a: number;
 	public b: boolean;
 	protected c: string;
+	readonly d: unknown;
 }
 
 //Typescript automatically takes the type from the value used at inicialization of variable
