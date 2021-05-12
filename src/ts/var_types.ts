@@ -125,3 +125,7 @@ let customObject: CustomCombinationOfObjectTypes = {
 	index: 5,
 	random: 'string'
 };
+
+//You can also specify variable to expect Promise with any type. In this matter Boolean
+//NOTE! If working with promise type you must have atleast ES2015 setup in your tsconfig as target, ES3 and ES5 doesnt support promises like that
+let promiseTest: Promise<boolean>;

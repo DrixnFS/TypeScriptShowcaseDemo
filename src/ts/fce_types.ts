@@ -27,3 +27,9 @@ function generateError(message: string, code: number): never {
 	throw { message: message, errorCode: code };
 	//also infinite loops never returns value etc...
 }
+
+//Functions can allso return promise and the promise can have a type. If promise type is boolean function MUST return boolean
+//NOTE! If working with promise type you must have atleast ES2015 setup in your tsconfig as target, ES3 and ES5 doesnt support promises like that
+async function promiseMe() : Promise<boolean> {
+	return false
+}
