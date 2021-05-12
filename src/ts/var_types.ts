@@ -107,3 +107,21 @@ let userName: string;
 if (typeof userInput === "string") {
 	userName = userInput;
 }
+
+//you can also combine custom types with other custom types
+type CustomCombinationOfObjectTypes = {
+	sessionObject: SessionObjectType;
+	index: CustomAliasType;
+	random: Combinable; 
+};
+
+//This is how it looks in code, if any of the defined types is missing IDE will show underlined issue on declaration for you
+let customObject: CustomCombinationOfObjectTypes = {
+	sessionObject: {
+		username: "Pepega",
+		sessiontoken: "test",
+		session_created: new Date(),
+	},
+	index: 5,
+	random: 'string'
+};
